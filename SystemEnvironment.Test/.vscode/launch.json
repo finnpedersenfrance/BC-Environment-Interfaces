@@ -1,5 +1,26 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": "Docker",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "OnPrem",
+            "server": "http://FinnPedersenFranceV262Docker",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "startupObjectType": "Page",
+            "startupObjectId": 130451,
+            "breakOnError": "ExcludeTry",
+            "breakOnRecordWrite": "None",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "tenant": "default",
+            "usePublicURLFromServer": true,
+            "schemaUpdateMode": "ForceSync"
+        }
     ]
 }

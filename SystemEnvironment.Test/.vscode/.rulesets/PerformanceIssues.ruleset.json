@@ -1,0 +1,31 @@
+{
+    "name": "Potentiel Performance Ruleset",
+    "description": "This allows us to fix the issues in a prioritized order.",
+    "rules": [
+        {
+            "id": "AL0254",
+            "action": "Error",
+            "justification": "Sorting field '{0}' should be part of the keys for table '{1}'. PERFORMANCE."
+        },
+        {
+            "id": "AA0233",
+            "action": "Error",
+            "justification": "Use Get(), FindFirst() and FindLast() without Next() method. PERFORMANCE"
+        },
+        {
+            "id": "AA0181",
+            "action": "Error",
+            "justification": "The FindSet() or Find() methods must be used only in connection with the Next() method. PERFORMANCE"
+        },
+        {
+            "id": "AA0232",
+            "action": "None",
+            "justification": "The FlowField of a table should be indexed. PERFORMANCE. The CodeAnalyzer has a problem."
+        },
+        {
+            "id": "AA0210",
+            "action": "Error",
+            "justification": "Avoid non-indexed fields into filtering. PERFORMANCE"
+        }
+   ]
+}

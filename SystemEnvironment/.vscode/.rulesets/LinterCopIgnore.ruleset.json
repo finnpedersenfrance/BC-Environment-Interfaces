@@ -1,0 +1,21 @@
+{
+    "name": "Ignore.BusinessCentral.LinterCop",
+    "description": "Suppressing some BusinessCentral.LinterCop rules.",
+    "rules": [
+        {
+            "id": "LC0010",
+            "action": "Error",
+            "justification": "Cyclomatic Complexity."
+        },
+        {
+            "id": "LC0025",
+            "action": "Error",
+            "justification": "Procedure must be either local, internal or define a documentation comment."
+        },
+        {
+            "id": "LC0088",
+            "action": "Error",
+            "justification": "Option types should be avoided, use enum if applicable."
+        }
+    ]
+}

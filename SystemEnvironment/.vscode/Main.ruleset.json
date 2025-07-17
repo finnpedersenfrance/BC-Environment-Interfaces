@@ -1,0 +1,22 @@
+{
+    "name": "Ruleset Library",
+    "description": "A list of project specific rules",
+    "includedRuleSets": [
+        {
+            "action": "Default",
+            "path": ".rulesets/General.ruleset.json"
+        },
+        {
+            "action": "Default",
+            "path": ".rulesets/RunTimeError.ruleset.json"
+        },
+        {
+            "action": "Default",
+            "path": ".rulesets/PerformanceIssues.ruleset.json"
+        },
+        {
+            "action": "Default",
+            "path": ".rulesets/LinterCopIgnore.ruleset.json"
+        }
+    ]
+}

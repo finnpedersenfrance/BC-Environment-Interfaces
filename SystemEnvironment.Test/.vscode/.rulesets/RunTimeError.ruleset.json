@@ -1,0 +1,21 @@
+{
+    "name": "Potential RunTime Ruleset",
+    "description": "This allows us to fix the issues in a prioritized order.",
+    "rules": [
+        {
+            "id": "AA0139",
+            "action": "Error",
+            "justification": "Do not assign a text to a target with smaller size. POTENTIAL RUNTIME ERROR."
+        },
+        {
+            "id": "AA0462",
+            "action": "Error",
+            "justification": "The CalcDate should only be used with DataFormula variables. Alternatively the string should be enclosed using the <> symbols. POTENTIAL RUNTIME ERROR."
+        },
+        {
+            "id": "AL0615",
+            "action": "Error",
+            "justification": "Field '{0}' is not specified as a source expression on page '{1}'. All fields specified in ODataKeyFields must be used as the source expression in a page control. POTENTIAL RUNTIME ERROR."
+        }
+    ]
+}

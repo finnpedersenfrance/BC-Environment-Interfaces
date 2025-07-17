@@ -1,6 +1,6 @@
 {
   "id": "50d61ba7-6983-4ecb-9dcd-2af0ba26932d",
-  "name": "SystemEnvironment",
+  "name": "System Environment",
   "publisher": "Finn Pedersen France",
   "version": "1.0.0.0",
   "brief": "",
@@ -13,19 +13,32 @@
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "26.0.0.0",
+  "runtime": "15.0",
   "idRanges": [
     {
       "from": 97000,
       "to": 97009
     }
   ],
+  "internalsVisibleTo": [
+    {
+      "id": "5d81f158-abd5-4008-8d89-7e4182bf85ec",
+      "name": "SystemEnvironment.Test",
+      "publisher": "Finn Pedersen France"
+    }
+  ],
+  "target": "Cloud",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile",
+    "GenerateCaptions"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
-    "allowDownloadingSource": false,
-    "includeSourceInSymbolFile": false
-  }
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "applicationInsightsConnectionString": "1234567890",
+  "contextSensitiveHelpUrl": "https://www.erpgruppen.dk/"
 }

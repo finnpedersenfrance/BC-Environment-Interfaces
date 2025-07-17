@@ -12,6 +12,12 @@
   "logo": "",
   "dependencies": [
     {
+      "publisher": "Finn Pedersen France",
+      "name": "System Environment",
+      "id": "50d61ba7-6983-4ecb-9dcd-2af0ba26932d",
+      "version": "1.0.0.0"
+    },
+    {
       "publisher": "Microsoft",
       "name": "Library Assert",
       "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
@@ -22,23 +28,37 @@
       "name": "Any",
       "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
       "version": "22.0.0.0"
+    },
+    {
+      "id": "23de40a6-dfe8-4f80-80db-d70f83ce8caf",
+      "name": "Test Runner",
+      "publisher": "Microsoft",
+      "version": "26.2.34746.36845"
+    },
+    {
+      "id": "2156302a-872f-4568-be0b-60968696f0d5",
+      "name": "AI Test Toolkit",
+      "publisher": "Microsoft",
+      "version": "26.2.34746.36845"
     }
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
-  "application": "22.0.0.0",
+  "application": "26.2.34746.36845",
+  "runtime": "15.0",
   "idRanges": [
     {
       "from": 98000,
       "to": 98009
     }
   ],
+  "target": "Cloud",
   "features": [
     "NoImplicitWith"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
-    "allowDownloadingSource": false,
-    "includeSourceInSymbolFile": false
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
   }
 }
