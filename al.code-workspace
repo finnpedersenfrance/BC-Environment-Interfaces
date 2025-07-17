@@ -4,6 +4,9 @@
       "path": "SystemEnvironment"
     },
     {
+      "path": "SystemEnvironment.Test"
+    },
+    {
       "path": ".AL-Go"
     }
   ],
