@@ -19,7 +19,7 @@ codeunit 98000 "Test Application State"
     begin
         // [SCENARIO #001] No company name in disabled environment
         // [GIVEN] a setup with no licensee
-        // [WHEN] calling ValidateApplicationState
+        // [WHEN] calculating the application state
         // [THEN] the application state should be empty. I.e. disabled.
 
         Licensee := '';
@@ -38,7 +38,7 @@ codeunit 98000 "Test Application State"
     begin
         // [SCENARIO #002] Application State in production
         // [GIVEN] a setup with a valide licensee
-        // [WHEN] calling ValidateApplicationState
+        // [WHEN] calculating the application state
         // [THEN] the application state should be prduction
 
         Licensee := StubProductionEnvironment.ThisCompanyName();
@@ -57,7 +57,7 @@ codeunit 98000 "Test Application State"
     begin
         // [SCENARIO #003] Application State in test
         // [GIVEN] a setup with a valide licensee
-        // [WHEN] calling ValidateApplicationState
+        // [WHEN] calculating the application state
         // [THEN] the application state should be test
 
         Licensee := StubTestEnvironment.ThisCompanyName();
