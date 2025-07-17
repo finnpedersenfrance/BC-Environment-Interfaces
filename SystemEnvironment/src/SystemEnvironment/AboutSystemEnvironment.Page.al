@@ -32,7 +32,7 @@ page 97000 "About System Environment"
                     Editable = false;
                     ToolTip = 'Specifies the environment the user is currently working in.';
                 }
-                field(CompanyName; CompanyName())
+                field(CompanyName; this.CurrentCompanyName)
                 {
                     Caption = 'Company Name';
                     Editable = false;
@@ -52,6 +52,7 @@ page 97000 "About System Environment"
         EnvironmentInformation: Codeunit System.Environment."Environment Information";
         IsEvaluationCompany: Boolean;
         SystemEnvironment: Enum "System Environment";
+        CurrentCompanyName: Text[30];
 
     trigger OnOpenPage()
     var
@@ -59,6 +60,7 @@ page 97000 "About System Environment"
     begin
         this.IsEvaluationCompany := AppEnvironment.IsEvaluationCompany();
         this.SystemEnvironment := AppEnvironment.SystemEnvironment();
+        this.CurrentCompanyName := AppEnvironment.ThisCompanyName();
     end;
 
 }
